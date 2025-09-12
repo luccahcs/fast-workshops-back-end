@@ -8,7 +8,7 @@ namespace FastWorkshops.Api.Controllers;
 public class ColaboradorController : ControllerBase
 {
     private static List<Colaborador> colaboradores = new()
-    {
+    {   
         new Colaborador { Id = 1, Nome = "Lucas" },
         new Colaborador { Id = 2, Nome = "Maria" }
     };
@@ -26,7 +26,7 @@ public class ColaboradorController : ControllerBase
     [HttpPost]
     public IActionResult Create(Colaborador novo)
     {
-        novo.Id = colaboradores.Max(c => c.Id) + 1; // gera Id novo
+        novo.Id = colaboradores.Max(c => c.Id) + 1;
         colaboradores.Add(novo);
         return CreatedAtAction(nameof(GetById), new { id = novo.Id }, novo);
     }

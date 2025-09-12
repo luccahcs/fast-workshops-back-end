@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FastWorkshops.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5d2bf86c745e843c8bf3004ca4350d701272174")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9ec32365ef6412757dbd4267a8ff7a241c02e89")]
 [assembly: System.Reflection.AssemblyProductAttribute("FastWorkshops.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FastWorkshops.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
