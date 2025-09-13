@@ -1,15 +1,15 @@
+using FastWorkshops.Api.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona os serviços necessários para controllers
-builder.Services.AddControllers(); // Adiciona suporte a controllers MVC
+builder.Services.AddSingleton<Database>();
+
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configuração do pipeline de requisições
-
 app.UseHttpsRedirection();
 
-// Mapeia os controllers para as rotas da API
 app.MapControllers();
 
 app.Run();
