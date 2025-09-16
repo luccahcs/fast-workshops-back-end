@@ -58,6 +58,7 @@ public class WorkshopsController : ControllerBase
             Nome = reader.GetString("Nome"),
             DataRealizacao = reader.GetDateTime("DataRealizacao"),
             Descricao = reader.GetString("Descricao")
+            
         };
 
         return Ok(ws);
@@ -73,6 +74,7 @@ public class WorkshopsController : ControllerBase
         cmd.Parameters.AddWithValue("@nome", novo.Nome);
         cmd.Parameters.AddWithValue("@data", novo.DataRealizacao);
         cmd.Parameters.AddWithValue("@descricao", novo.Descricao);
+
 
         novo.Id = Convert.ToInt32(cmd.ExecuteScalar());
         return CreatedAtAction(nameof(GetById), new { id = novo.Id }, novo);
